@@ -1,5 +1,5 @@
 //
-//  LogVC.swift
+//  SecondViewController.swift
 //  treads
 //
 //  Created by Daniel Bonehill on 24/03/2018.
