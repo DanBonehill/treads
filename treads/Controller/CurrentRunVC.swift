@@ -7,11 +7,21 @@
 //
 
 import UIKit
+import MapKit
 
 class CurrentRunVC: LocationVC {
 
     @IBOutlet weak var swipeBGImageView: UIImageView!
     @IBOutlet weak var sliderImageView: UIImageView!
+    @IBOutlet weak var durationLbl: UILabel!
+    @IBOutlet weak var paceLbl: UILabel!
+    @IBOutlet weak var distanceLbl: UILabel!
+    @IBOutlet weak var pauseBtn: UIButton!
+    
+    var startLocation: CLLocation!
+    var lastLocation: CLLocation!
+    
+    var runDistance = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +30,24 @@ class CurrentRunVC: LocationVC {
         sliderImageView.addGestureRecognizer(swipeGesture)
         sliderImageView.isUserInteractionEnabled = true
         swipeGesture.delegate = self as? UIGestureRecognizerDelegate
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        manager?.delegate = self
+        manager?.distanceFilter = 10
+        startRun()
+    }
+    
+    func startRun() {
+        manager?.startUpdatingLocation()
+    }
+    
+    func endRun() {
+        manager?.stopUpdatingLocation()
+    }
+    
+    @IBAction func pauseBtnPressed(_ sender: Any) {
+        
     }
     
     @objc func endRunSwiped(sender: UIPanGestureRecognizer) {
@@ -49,5 +77,23 @@ class CurrentRunVC: LocationVC {
                 }
             }
         }
+    }
+}
+
+extension CurrentRunVC: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if status == .authorizedWhenInUse {
+            checkLocationAuthStatus()
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if startLocation == nil {
+            startLocation = locations.first
+        } else if let location = locations.last {
+            runDistance += lastLocation.distance(from: location)
+            distanceLbl.text = "\(runDistance.metersToMiles(places: 2))"
+        }
+        lastLocation = locations.last
     }
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		318C341F206E6740001D1710 /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318C341E206E6740001D1710 /* LocationVC.swift */; };
+		318C3421206E9C0F001D1710 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318C3420206E9C0F001D1710 /* Extensions.swift */; };
 		31D8C6942066C689003F94D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C6932066C689003F94D1 /* AppDelegate.swift */; };
 		31D8C6982066C689003F94D1 /* LogVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C6972066C689003F94D1 /* LogVC.swift */; };
 		31D8C69B2066C689003F94D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31D8C6992066C689003F94D1 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		318C341E206E6740001D1710 /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
+		318C3420206E9C0F001D1710 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		31D8C6902066C689003F94D1 /* treads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = treads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31D8C6932066C689003F94D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31D8C6972066C689003F94D1 /* LogVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogVC.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		31D8C6A72066C82B003F94D1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				318C3420206E9C0F001D1710 /* Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				318C341F206E6740001D1710 /* LocationVC.swift in Sources */,
+				318C3421206E9C0F001D1710 /* Extensions.swift in Sources */,
 				31D8C6982066C689003F94D1 /* LogVC.swift in Sources */,
 				31D8C6942066C689003F94D1 /* AppDelegate.swift in Sources */,
 				31D8C6B3206D8B88003F94D1 /* CurrentRunVC.swift in Sources */,
