@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -167,6 +168,11 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qc2-hx-eCj">
                                 <rect key="frame" x="253" y="552" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="AIB-5r-5gP"/>
+                                    <constraint firstAttribute="height" constant="75" id="GVd-D1-nB1"/>
+                                    <constraint firstAttribute="width" secondItem="qc2-hx-eCj" secondAttribute="height" multiplier="1:1" id="Nn2-JI-FTU"/>
+                                </constraints>
                                 <state key="normal" image="pauseButton"/>
                                 <connections>
                                     <action selector="pauseBtnPressed:" destination="9Xo-a6-QrL" eventType="touchUpInside" id="7qX-l7-i3o"/>
@@ -188,6 +194,7 @@
                             <constraint firstItem="6Hf-G9-9FZ" firstAttribute="centerX" secondItem="W0E-hY-8kl" secondAttribute="centerX" id="4nM-M0-OVw"/>
                             <constraint firstItem="buV-XZ-Aj5" firstAttribute="centerX" secondItem="W0E-hY-8kl" secondAttribute="centerX" constant="-25" id="4yU-aP-Rv9"/>
                             <constraint firstItem="0wy-Kg-HIK" firstAttribute="leading" secondItem="0FZ-L4-ChX" secondAttribute="leading" id="5nc-vA-R7W"/>
+                            <constraint firstItem="qc2-hx-eCj" firstAttribute="leading" secondItem="H2Q-ci-Tf0" secondAttribute="trailing" constant="35" id="AzL-h7-PMw"/>
                             <constraint firstItem="0wy-Kg-HIK" firstAttribute="trailing" secondItem="0FZ-L4-ChX" secondAttribute="trailing" id="Dnf-jb-dXq"/>
                             <constraint firstItem="B6E-8K-HVC" firstAttribute="top" secondItem="0wy-Kg-HIK" secondAttribute="bottom" constant="42" id="HBo-i2-eH6"/>
                             <constraint firstItem="IM8-nk-jdO" firstAttribute="leading" secondItem="0FZ-L4-ChX" secondAttribute="leading" id="I1m-Ex-FXo"/>
@@ -203,7 +210,6 @@
                             <constraint firstItem="4az-kR-MvA" firstAttribute="centerY" secondItem="buV-XZ-Aj5" secondAttribute="centerY" id="e5N-NZ-cY7"/>
                             <constraint firstItem="6Hf-G9-9FZ" firstAttribute="top" secondItem="yIc-WQ-tn1" secondAttribute="bottom" constant="42" id="gJF-zI-t90"/>
                             <constraint firstAttribute="bottom" secondItem="IM8-nk-jdO" secondAttribute="bottom" id="k7U-YQ-EEY"/>
-                            <constraint firstItem="qc2-hx-eCj" firstAttribute="leading" secondItem="buV-XZ-Aj5" secondAttribute="trailing" constant="-25.5" id="m9K-zW-rK2"/>
                             <constraint firstItem="H2Q-ci-Tf0" firstAttribute="centerX" secondItem="buV-XZ-Aj5" secondAttribute="centerX" constant="20" id="myC-GJ-Rpo"/>
                             <constraint firstItem="IM8-nk-jdO" firstAttribute="top" secondItem="W0E-hY-8kl" secondAttribute="top" id="qaL-jx-8dD"/>
                             <constraint firstItem="0wy-Kg-HIK" firstAttribute="top" secondItem="6Hf-G9-9FZ" secondAttribute="bottom" constant="42" id="sbd-gE-Wik"/>
