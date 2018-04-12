@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		154BC0F55711304FB400F233 /* Pods_treads.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58FABA7D0D7B2052CB8FC06F /* Pods_treads.framework */; };
+		312B1E48207FAD810044D006 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312B1E47207FAD810044D006 /* Location.swift */; };
 		318C341F206E6740001D1710 /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318C341E206E6740001D1710 /* LocationVC.swift */; };
 		318C3421206E9C0F001D1710 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318C3420206E9C0F001D1710 /* Extensions.swift */; };
 		318C3423206FAABD001D1710 /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318C3422206FAABD001D1710 /* Run.swift */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		2A80D9087C31BC61DD16B5BF /* Pods-treads.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-treads.release.xcconfig"; path = "Pods/Target Support Files/Pods-treads/Pods-treads.release.xcconfig"; sourceTree = "<group>"; };
+		312B1E47207FAD810044D006 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		318C341E206E6740001D1710 /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
 		318C3420206E9C0F001D1710 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		318C3422206FAABD001D1710 /* Run.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				318C3422206FAABD001D1710 /* Run.swift */,
+				312B1E47207FAD810044D006 /* Location.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 			files = (
 				318C341F206E6740001D1710 /* LocationVC.swift in Sources */,
 				318C3421206E9C0F001D1710 /* Extensions.swift in Sources */,
+				312B1E48207FAD810044D006 /* Location.swift in Sources */,
 				31D8C6982066C689003F94D1 /* LogVC.swift in Sources */,
 				31D8C6942066C689003F94D1 /* AppDelegate.swift in Sources */,
 				31D8C6B3206D8B88003F94D1 /* CurrentRunVC.swift in Sources */,
