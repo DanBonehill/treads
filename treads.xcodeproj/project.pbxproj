@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		154BC0F55711304FB400F233 /* Pods_treads.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58FABA7D0D7B2052CB8FC06F /* Pods_treads.framework */; };
 		312B1E48207FAD810044D006 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312B1E47207FAD810044D006 /* Location.swift */; };
+		312B1E4A207FB10F0044D006 /* RealmConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312B1E49207FB10F0044D006 /* RealmConfig.swift */; };
 		318C341F206E6740001D1710 /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318C341E206E6740001D1710 /* LocationVC.swift */; };
 		318C3421206E9C0F001D1710 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318C3420206E9C0F001D1710 /* Extensions.swift */; };
 		318C3423206FAABD001D1710 /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318C3422206FAABD001D1710 /* Run.swift */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		2A80D9087C31BC61DD16B5BF /* Pods-treads.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-treads.release.xcconfig"; path = "Pods/Target Support Files/Pods-treads/Pods-treads.release.xcconfig"; sourceTree = "<group>"; };
 		312B1E47207FAD810044D006 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		312B1E49207FB10F0044D006 /* RealmConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmConfig.swift; sourceTree = "<group>"; };
 		318C341E206E6740001D1710 /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
 		318C3420206E9C0F001D1710 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		318C3422206FAABD001D1710 /* Run.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				318C3424206FC930001D1710 /* Constants.swift */,
+				312B1E49207FB10F0044D006 /* RealmConfig.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				31D8C6B3206D8B88003F94D1 /* CurrentRunVC.swift in Sources */,
 				318C3423206FAABD001D1710 /* Run.swift in Sources */,
 				318C3427206FD8B9001D1710 /* RunLogCell.swift in Sources */,
+				312B1E4A207FB10F0044D006 /* RealmConfig.swift in Sources */,
 				31D8C6B1206D3FA1003F94D1 /* BeginRunVC.swift in Sources */,
 				318C3425206FC930001D1710 /* Constants.swift in Sources */,
 			);
